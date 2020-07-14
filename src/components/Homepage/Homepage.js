@@ -1,11 +1,10 @@
 import React from 'react';
-import Header from '../Header/Header';
+import './Homepage.css';
 
 function Homepage() {
 	return (
 	<>
-	<Header></Header>
-	<div>Hello from Homepage</div>
+	<div className='test'>Hello from Homepage</div>
 	</>
 	)
 }
