@@ -4,13 +4,6 @@ import './Header.css';
 function Header() {
 	const [isToggled, setToggled] = useState(false);
 	const navClassNames = isToggled ? 'nav-links nav-active' : 'nav-links';
-	
-
-	// let menuClick = (event) => { 
-	// 	setToggled(!isToggled)
-	// 	console.log(isToggled);
-	// 	console.log(event.target);
-	// };
 
 	return (
 		<nav>
@@ -31,7 +24,16 @@ function Header() {
 					<a href='#'>Blog</a>
 				</li>
 			</ul>
-			<div className='burger' onClick={() => setToggled(!isToggled)}>
+			<div className='burger' onClick={() => {
+				setToggled(!isToggled)
+				// navLinks.forEach((links, index) => {
+				// 	if (links.style.animation) {
+				// 		links.style.animation = ''
+				// 	} else {
+				// 		links.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0}`
+				// 	}
+				// })
+				}}>
 				<div className='line1'></div>
 				<div className='line2'></div>
 				<div className='line3'></div>
